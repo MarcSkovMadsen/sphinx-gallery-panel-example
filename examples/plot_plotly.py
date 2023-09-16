@@ -27,6 +27,4 @@ layout = go.Layout(
 fig = dict(data=[surface], layout=layout)
 
 plotly_pane = pn.pane.Plotly(fig)
-
-from scraper import PanelScraper
-PanelScraper(plotly_pane)
+plotly_pane

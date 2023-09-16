@@ -23,6 +23,3 @@ df = pd.DataFrame({
 
 df_widget = pn.widgets.Tabulator(df, buttons={'Print': "<i class='fa fa-print'></i>"})
 df_widget
-
-from scraper import PanelScraper
-PanelScraper(df_widget)
