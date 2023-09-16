@@ -2,7 +2,14 @@
 
 An example of a minimal [sphinx-gallery](https://sphinx-gallery.github.io/stable/index.html) that works with Panel.
 
-Used for the discussion in [holoviz/discourse#6035](https://discourse.holoviz.org/t/how-to-use-sphinx-gallery-with-panel/6035).
+![Panel Sphinx Gallery](assets/sphinx-gallery.gif)
+
+See
+
+- the feature request in [panel#5519](https://github.com/holoviz/panel/issues/5519)
+- the discussion in [holoviz/discourse#6035](https://discourse.holoviz.org/t/how-to-use-sphinx-gallery-with-panel/6035)
+
+for more context.
 
 ## Install the project
 
