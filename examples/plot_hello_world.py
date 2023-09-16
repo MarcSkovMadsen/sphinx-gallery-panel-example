@@ -1,8 +1,8 @@
 """
-A Panel Hello World Example
-============================
+Hello World
+===========
 
-This is a Panel hello world example
+This is a Panel *hello world* example
 """
 import panel as pn
 

@@ -3,3 +3,4 @@ panel
 plotly
 sphinx-gallery
 sphinx>=4
+furo

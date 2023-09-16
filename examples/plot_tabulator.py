@@ -1,6 +1,6 @@
 """
-A Tabulator Example
-===================
+Tabulator Example
+=================
 
 This is a Tabulator example
 """

@@ -1,8 +1,8 @@
 """
-A Plotly Example
-================
+Plotly Example
+==============
 
-This is a plotly example
+This is a Plotly example
 """
 import panel as pn
 import numpy as np
