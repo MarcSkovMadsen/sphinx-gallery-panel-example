@@ -1,3 +1,4 @@
-sphinx>=4
-sphinx-gallery
 panel
+plotly
+sphinx-gallery
+sphinx>=4
