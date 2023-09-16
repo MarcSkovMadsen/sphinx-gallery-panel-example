@@ -1,14 +1,23 @@
 # sphinx-gallery-panel-example
 
-An example of a sphinx-gallery using Panel
+An example of a minimal sphinx-gallery using Panel used for the discussion in
+[holoviz/discourse#6035](https://discourse.holoviz.org/t/how-to-use-sphinx-gallery-with-panel/6035)
 
 ## Build the project
 
 ```bash
-sphinx-build -b html docs/source/ docs/build/html
+sphinx-build -b html docs docs/_build/html
 ```
 
-## Starting from scratch
+## Serve the project
+
+You can start a web server to view the project locally using
+
+```bash
+python -m http.server -d docs/_build/html/
+```
+
+## Creating this repository from scratch
 
 If you want to create this example repository from scratch
 
@@ -28,6 +37,7 @@ cd docs
 sphinx-quickstart
 ```
 
-Create the [examples](examples) folder
+Create the [examples](examples) folder. Remember to include docstrings in your example files.
+The docstrings should be in restructered text format and include a header.
 
 Configure and use Sphinx-Gallery as described [here](https://sphinx-gallery.github.io/stable/getting_started.html#configure-and-use-sphinx-gallery)

@@ -1,3 +1,9 @@
+"""
+A Plotly Example
+================
+
+This is a plotly example
+"""
 import panel as pn
 import numpy as np
 import plotly.graph_objs as go
@@ -21,4 +27,6 @@ layout = go.Layout(
 fig = dict(data=[surface], layout=layout)
 
 plotly_pane = pn.pane.Plotly(fig)
-plotly_pane
+
+from scraper import PanelScraper
+PanelScraper(plotly_pane)

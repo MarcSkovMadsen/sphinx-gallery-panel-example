@@ -1,3 +1,9 @@
+"""
+A Tabulator Example
+===================
+
+This is a Tabulator example
+"""
 import datetime as dt
 import numpy as np
 import pandas as pd
@@ -17,3 +23,6 @@ df = pd.DataFrame({
 
 df_widget = pn.widgets.Tabulator(df, buttons={'Print': "<i class='fa fa-print'></i>"})
 df_widget
+
+from scraper import PanelScraper
+PanelScraper(df_widget)

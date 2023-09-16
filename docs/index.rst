@@ -10,6 +10,8 @@ Welcome to Sphinx-Gallery-Panel's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   auto_examples/index.rst
+
 
 
 Indices and tables
