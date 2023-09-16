@@ -2,7 +2,7 @@
 Hello World
 ===========
 
-This is a Panel *hello world* example
+This is a basic Panel *hello world* example
 """
 import panel as pn
 

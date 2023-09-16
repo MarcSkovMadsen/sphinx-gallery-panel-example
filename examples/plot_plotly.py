@@ -2,7 +2,7 @@
 Plotly Example
 ==============
 
-This is a Plotly example
+This is a basic Plotly example
 """
 import panel as pn
 import numpy as np

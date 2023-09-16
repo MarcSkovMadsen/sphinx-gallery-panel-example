@@ -2,7 +2,7 @@
 Tabulator Example
 =================
 
-This is a Tabulator example
+This is a basic Tabulator example
 """
 import datetime as dt
 import numpy as np

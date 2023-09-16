@@ -40,14 +40,18 @@ import panel as pn
 from uuid import uuid4
 from io import StringIO
 from html import escape
+import param
 
-class PanelScraper():
+class PanelReprHTML(param.Parameterized):
+    max_height=param.Integer(1000, bounds=(0,None))
+    embed = param.Boolean(True)
+
     def __init__(self, object):
         self._object = object
 
     def _get_html(self):
         out = StringIO()
-        self._object.save(out, embed=False)
+        self._object.save(out, embed=self.embed)
         out.seek(0)
         return escape(out.read())
     
@@ -59,9 +63,10 @@ class PanelScraper():
 function resizeIframe(){{
     setTimeout(() => {{
         var iframe = document.getElementById("{uid}");
-        iframe.width = iframe.contentWindow.document.body.scrollWidth + 10;
-        iframe.height = iframe.contentWindow.document.body.scrollHeight + 10;    
-    }}, "10");
+        iframe.width = iframe.contentWindow.document.body.scrollWidth + 25;
+        iframe.height = Math.min(iframe.contentWindow.document.body.scrollHeight + 10, {self.max_height});
+        console.log(iframe.height)
+    }}, "100");
     
 }}
 </script>        
@@ -69,9 +74,10 @@ function resizeIframe(){{
 """
 
 def _repr_html_(self):
-    return PanelScraper(self)._repr_html_()
+    return PanelReprHTML(self)._repr_html_()
 
-def configure_sphinx_gallery():
+def add_repr_html():
     pn.viewable.Viewable._repr_html_=_repr_html_
 
-configure_sphinx_gallery()
+PanelReprHTML.max_height=600
+add_repr_html()
