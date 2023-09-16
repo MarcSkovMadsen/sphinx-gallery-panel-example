@@ -60,9 +60,9 @@ class PanelReprHTML(param.Parameterized):
         uid = str(uuid4())       
         return f"""
 <script>
-function resizeIframe(){{
+function resizeIframe(uid){{
     setTimeout(() => {{
-        var iframe = document.getElementById("{uid}");
+        var iframe = document.getElementById(uid);
         iframe.width = iframe.contentWindow.document.body.scrollWidth + 25;
         iframe.height = Math.min(iframe.contentWindow.document.body.scrollHeight + 10, {self.max_height});
         console.log(iframe.height)
@@ -70,7 +70,7 @@ function resizeIframe(){{
     
 }}
 </script>        
-<iframe id="{uid}" srcdoc='{html}' frameBorder='0' onload='resizeIframe(this)'></iframe>
+<iframe id="{uid}" srcdoc='{html}' frameBorder='0' onload='resizeIframe("{uid}")'></iframe>
 """
 
 def _repr_html_(self):
