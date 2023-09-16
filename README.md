@@ -17,6 +17,16 @@ You can start a web server to view the project locally using
 python -m http.server -d docs/_build/html/
 ```
 
+The project is available at [http://localhost:8000](http://localhost:8000).
+
+## Rebuild
+
+Remove the `autoexamples` folder and build again.
+
+```bash
+rm -rf docs/auto_examples/;sphinx-build -b html docs docs/_build/html
+```
+
 ## Creating this repository from scratch
 
 If you want to create this example repository from scratch
