@@ -1,6 +1,6 @@
 matplotlib
 panel
+piccolo-theme
 plotly
 sphinx-gallery
 sphinx>=4
-furo

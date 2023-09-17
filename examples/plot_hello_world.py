@@ -2,7 +2,7 @@
 Hello World
 ===========
 
-This is a basic Panel *hello world* example
+This is a basic Panel *hello world* example `Title <http://www.google.com>`_ 
 """
 import panel as pn
 

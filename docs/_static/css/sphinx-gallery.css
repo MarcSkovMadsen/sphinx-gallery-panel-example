@@ -1,0 +1,37 @@
+:root, html[data-theme="light"], body[data-theme="light"] {
+    --sg-tooltip-foreground: black;
+    --sg-tooltip-background: rgba(250, 250, 250, 0.9);
+    --sg-tooltip-border: #ccc transparent;
+    --sg-thumb-box-shadow-color: #6c757d40;
+    --sg-thumb-hover-border: #0069d9;
+    --sg-script-out: #888;
+    --sg-script-pre: #fafae2;
+    --sg-pytb-foreground: #000;
+    --sg-pytb-background: #ffe4e4;
+    --sg-pytb-border-color: #f66;
+    
+    --sg-download-a-background-color: #e5e5e5;
+    --sg-download-a-background-image: none;
+    --sg-download-a-border-color: #e5e5e5;
+    --sg-download-a-color: #262626;
+    --sg-download-a-hover-background-color: #dddddd;
+    --sg-download-a-hover-box-shadow-1: none;
+    --sg-download-a-hover-box-shadow-2: none;
+}
+
+:root {
+    --codeBackgroundColor: #f8f8f8;
+    --inlineCodeBackgroundColor: #f8f8f8;
+    --codeBlue: #0000ff;
+    --codeGreen: #008000;
+    --dividerColor: rgba(0, 0, 0, 0.08);
+    --faintFontColor: rgba(0, 0, 0, 0.6);
+    --fontColor: #252630;
+    --linkColor: #2980b9;
+    --mainBackgroundColor: white;
+    --mainNavColor: #1f77b4;
+    --notificationBannerColor: #176bb0;
+    --searchHighlightColor: #fff150;
+    --sidebarColor: white;
+    --navbarHeight: 4rem;
+}

@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Awesome Panel'
-copyright = '2023, Marc Skov Madsen'
+copyright = '2023, Awesome Panel'
 author = 'Marc Skov Madsen'
 
 # -- General configuration ---------------------------------------------------
@@ -18,21 +18,28 @@ extensions = [
 ]
 
 sphinx_gallery_conf = {
-     'examples_dirs': '../examples',   # path to your example scripts
-     'gallery_dirs': 'auto_examples',  # path to where to save gallery generated output
-     'ignore_pattern': 'scr'
+    'examples_dirs': '../examples',   # path to your example scripts
+    'gallery_dirs': 'auto_examples',  # path to where to save gallery generated output
+    'ignore_pattern': 'scr',
+    'default_thumb_file': 'docs/_static/images/panel_logo.png',
+    # 'line_numbers': True,
 }
+html_title = "Awesome Panel"
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+html_theme = 'piccolo_theme'
 
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'furo'
 html_static_path = ['_static']
+html_favicon = "https://raw.githubusercontent.com/awesome-panel/awesome-panel-assets/320297ccb92773da099f6b97d267cc0433b67c23/favicon/ap-1f77b4.ico"
+html_css_files = [
+    'css/sphinx-gallery.css',
+]
 
 # Configure sphinx-gallery for panel
 

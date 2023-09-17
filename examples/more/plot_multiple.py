@@ -2,7 +2,9 @@
 Multiple Outputs
 ================
 
-This examples shows that multiple outputs are supported
+This example shows that multiple outputs are supported
+
+Try the live app `here <https://www.google.com>`_ 
 """
 import panel as pn
 
@@ -35,4 +37,4 @@ layout = go.Layout(
 fig = dict(data=[surface], layout=layout)
 
 plotly_pane = pn.pane.Plotly(fig)
-plotly_pane
+plotly_pane.servable()
