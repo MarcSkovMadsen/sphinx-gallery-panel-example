@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Awesome Panel'
+project = 'Sphinx Gallery Panel Example'
 copyright = '2023, Awesome Panel'
 author = 'Marc Skov Madsen'
 
@@ -19,12 +19,14 @@ extensions = [
 
 sphinx_gallery_conf = {
     'examples_dirs': '../examples',   # path to your example scripts
-    'gallery_dirs': 'auto_examples',  # path to where to save gallery generated output
+    'gallery_dirs': 'examples',  # path to where to save gallery generated output
+    'filename_pattern': r'/.*\.py',
     'ignore_pattern': 'scr',
     'default_thumb_file': 'docs/_static/images/panel_logo.png',
     # 'line_numbers': True,
+    'remove_config_comments': True,
 }
-html_title = "Awesome Panel"
+html_title = "Panel Gallery"
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']

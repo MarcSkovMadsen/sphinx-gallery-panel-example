@@ -5,7 +5,7 @@ Awesome Panel
    :maxdepth: 2
    :caption: Contents:
 
-   auto_examples/index.rst
+   examples/index.rst
 
 
 

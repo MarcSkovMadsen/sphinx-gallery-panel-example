@@ -1,8 +1,10 @@
-# sphinx-gallery-panel-example
+# Sphinx Gallery - Panel Example
 
-An example of a minimal [sphinx-gallery](https://sphinx-gallery.github.io/stable/index.html) that works with Panel.
+An example of a minimal [sphinx-gallery](https://sphinx-gallery.github.io/stable/index.html) that works with [Panel](https://panel.holoviz.org/).
 
-![Panel Sphinx Gallery](assets/sphinx-gallery.gif)
+![Panel Sphinx Gallery](assets/images/panel-sphinx-gallery.png)
+
+![Panel Sphinx Example](assets/images/panel-sphinx-gallery-example.png)
 
 See
 
@@ -21,13 +23,21 @@ source .venv/bin/activate # linux. Use similar command for windows or macos
 pip install -r requirements.txt
 ```
 
-## Build the project
+## Serve the examples
+
+```bash
+panel serve examples/*.py examples/**/*.py --autoreload 
+```
+
+## Develop the gallery
+
+### Build
 
 ```bash
 sphinx-build -b html docs docs/_build/html
 ```
 
-## Serve the project
+### Serve
 
 You can start a web server to view the project locally using
 
@@ -37,10 +47,10 @@ python -m http.server -d docs/_build/html/
 
 The project is available at [http://localhost:8000](http://localhost:8000).
 
-## Rebuild
+### Rebuild
 
-Remove the `autoexamples` folder and build again.
+Remove the `docs/examples` folder and build again.
 
 ```bash
-rm -rf docs/auto_examples/;sphinx-build -b html docs docs/_build/html
+rm -rf docs/examples/;sphinx-build -b html docs docs/_build/html
 ```
